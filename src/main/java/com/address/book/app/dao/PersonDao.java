@@ -1,9 +1,10 @@
-package com.address.book.app.service;
+package com.address.book.app.dao;
 
 import com.address.book.app.entity.Person;
+
 import java.util.List;
 
-public interface PersonService {
+public interface PersonDao {
     public Person savePerson(Person person);
     public List<Person> findPerson();
     public Person findPerson(Integer id);

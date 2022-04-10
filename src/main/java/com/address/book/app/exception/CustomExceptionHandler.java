@@ -13,7 +13,7 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = RuntimeException.class)
     protected ResponseEntity<Object> handleRuntimeException(RuntimeException ex, WebRequest request) {
-        String bodyOfResponse = "Invalid person id provided";
+        String bodyOfResponse = "Exception occurred!";
         return handleExceptionInternal(ex, bodyOfResponse, new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
 }
