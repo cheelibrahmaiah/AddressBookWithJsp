@@ -42,15 +42,6 @@ CREATE TABLE `person` (
 ) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `person`
---
-
-LOCK TABLES `person` WRITE;
-/*!40000 ALTER TABLE `person` DISABLE KEYS */;
-INSERT INTO `person` VALUES (22,'Brahmaiah','Cheeli',22,22);
-/*!40000 ALTER TABLE `person` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `person_address`
@@ -70,15 +61,6 @@ CREATE TABLE `person_address` (
 ) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `person_address`
---
-
-LOCK TABLES `person_address` WRITE;
-/*!40000 ALTER TABLE `person_address` DISABLE KEYS */;
-INSERT INTO `person_address` VALUES (22,'HYDERABAD','India','Telangana','A12/208, TS Housing Board Colony, Bandlaguda, Nagole','500068');
-/*!40000 ALTER TABLE `person_address` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `person_contacts`
@@ -95,17 +77,6 @@ CREATE TABLE `person_contacts` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `person_contacts`
---
-
-LOCK TABLES `person_contacts` WRITE;
-/*!40000 ALTER TABLE `person_contacts` DISABLE KEYS */;
-INSERT INTO `person_contacts` VALUES (22,'cheelibrahmaiah@gmail.com','','+918125353398');
-/*!40000 ALTER TABLE `person_contacts` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
