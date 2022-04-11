@@ -31,8 +31,12 @@
         <spring:url value="/" var="homeURL" />
         <a href=${homeURL} class="navbar-brand">Address Book</a>
         <form class="form-inline">
-          <button id="saveContactBtn" class="btn btn btn-primary" type="button" data-toggle="modal" data-target="#saveContact"><i class="fa fa-plus" aria-hidden="true"></i></button>&nbsp;
-          <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#searchContact"><i class="fa fa-search" aria-hidden="true"></i></button>
+           <c:if test="${showHomeBtn == 'Y'}">
+            <a href=${homeURL} class="btn btn btn-success"><i class="fa fa-home" aria-hidden="true"></i></a>
+            &nbsp;
+           </c:if>
+           <button id="saveContactBtn" class="btn btn btn-primary" type="button" data-toggle="modal" data-target="#saveContact"><i class="fa fa-plus" aria-hidden="true"></i></button>&nbsp;
+           <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#searchContact"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
       </nav>
 

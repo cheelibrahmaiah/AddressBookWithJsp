@@ -43,6 +43,7 @@ public class PersonController {
         PersonVO personVO = PersonVO.deepCopyFromPerson(person);
         editModel.addObject("personForm", personVO);
         editModel.addObject("id", personVO.getId());
+        editModel.addObject("showHomeBtn", "Y");
 
         editModel.setViewName("edit");
         return editModel;
@@ -70,6 +71,7 @@ public class PersonController {
         indexModel.addObject("contacts", persons);
         PersonVO personVO = new PersonVO();
         indexModel.addObject("personForm", personVO);
+        indexModel.addObject("showHomeBtn", "Y");
 
         indexModel.setViewName("index");
         return indexModel;
